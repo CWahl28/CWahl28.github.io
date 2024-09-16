@@ -13,7 +13,7 @@ markdown is a powerful formatting language that is optimized for reading
 
 qwertyuio
 
-###lists
+### lists
 
 here is an example of a list
 
@@ -31,7 +31,7 @@ must have space after formatting thingy
 2. second 
 3. third
 
-###paragraphs
+### paragraphs
 
 qewtrrtig
 
