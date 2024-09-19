@@ -1,15 +1,21 @@
 # CWahl28APS.github.io
 # CWahl28APS.github.io
+<<<<<<< HEAD
 
 for the quiz
 
+=======
+>>>>>>> origin/main
 pig
 PIG
 Pig
 anotherrrr pig
 
+<<<<<<< HEAD
 ### markdown practice
 
+=======
+>>>>>>> origin/main
 # This is markdown
 
 markdown is a powerful formatting language that is optimized for reading
@@ -18,7 +24,11 @@ markdown is a powerful formatting language that is optimized for reading
 
 qwertyuio
 
+<<<<<<< HEAD
 ## lists
+=======
+### lists
+>>>>>>> origin/main
 
 here is an example of a list
 
@@ -36,6 +46,7 @@ must have space after formatting thingy
 2. second 
 3. third
 
+<<<<<<< HEAD
 ## paragraphs
 
 qewtrrtig
@@ -62,3 +73,12 @@ I am feeling good about this new technology. I have gotten most it down relative
 
 As advice for future students, I would say make sure you miss none of the steps at all, like double check. This is especially important while setting things up for the first time as missing one step could mess it all up, even it you don't notice it then.
 
+=======
+### paragraphs
+
+qewtrrtig
+
+
+# CWahl28
+# CWahl28
+>>>>>>> origin/main
