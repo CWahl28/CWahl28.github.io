@@ -1,6 +1,4 @@
-# CWahl28APS.github.io
-# CWahl28APS.github.io
-
+# CWahl28.github.io
 ## for the quiz
 
 pig
