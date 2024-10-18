@@ -9,11 +9,11 @@
 [linkkkkk yipee](https://example.com) 
 
 ## table .w.
-| name | facts |
-| --- | --- |
-| garfield | likes lasangna |
-| tom | chases gary |
-| meowth | TO PROTECT THE WORLD FROM DEVESTATION! |
+ | name | facts | 
+ | --- | --- | 
+ | garfield | likes lasangna | 
+ | tom | chases gary | 
+ | meowth | TO PROTECT THE WORLD FROM DEVESTATION! | 
 
 ## image
 
