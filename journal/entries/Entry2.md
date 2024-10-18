@@ -1,4 +1,4 @@
-## Journal entry
+## Journal Entry 2
 
 ### Question 1:
 The difference between symmetric and asymetric encyption is that symmetric encyrption uses the same key for both encyption and decryption, asymmetric uses two different keys for each part.
