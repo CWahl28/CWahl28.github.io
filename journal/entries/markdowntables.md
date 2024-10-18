@@ -1,4 +1,4 @@
-# Today we will practice mmarkdown tables, links, and pictures.
+# Today we will practice markdown tables, links, and pictures.
 
 1. This is a list
 - this is also a list
