@@ -6,12 +6,16 @@
 	* this is a sublist
 
 ## links :)
-![linkkkkk yipee](example.com)
+[linkkkkk yipee](https://example.com) 
 
 ## table .w.
 | name | facts |
 | --- | --- |
 | garfield | likes lasangna |
 | tom | chases gary |
-| meowth | meow. |
+| meowth | TO PROTECT THE WORLD FROM DEVESTATION! |
+
+## image
+
+![athan](athan.png)
 
