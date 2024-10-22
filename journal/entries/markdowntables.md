@@ -11,11 +11,19 @@
 ## table .w.
  | name | facts |  
  | --- | --- | 
- | garfield | likes lasangna | 
+ | garifield | likes lasangna | 
  | tom | chases gary | 
  | meowth | TO PROTECT THE WORLD FROM DEVESTATION! | 
 
 ## image
 
-![athan](athan.png)
+![mini pixel athan](athan.png)
+
+## Now we'll do equations
+
+$y = mx + b$
+
+$f(x) = x^2$
+
+$f(x) = \frac{3}{4}$
 
