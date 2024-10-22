@@ -9,7 +9,7 @@
 [linkkkkk yipee](https://example.com) 
 
 ## table .w.
- | name | facts | 
+ | name | facts |  
  | --- | --- | 
  | garfield | likes lasangna | 
  | tom | chases gary | 
