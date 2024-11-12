@@ -20,11 +20,11 @@
 ![mini pixel athan](athan.png)
 
 ## Now we'll do equations
+ 
+$ y = mx + b $
 
-$y = mx + b$
+$ f(x) = x^2 $
 
-$f(x) = x^2$
+$ f(x) = \frac{3}{4} $
 
-$f(x) = \frac{3}{4}$
-
-$x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}$
+$ x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a} $
