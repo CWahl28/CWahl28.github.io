@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>10x10 Grid with CSS Grid</title>
+  <style>
+    body {
+      height: 100vh;
+      margin: 0;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(10, 1fr);
+      grid-template-rows: repeat(10, 1fr);
+      width: 100vmin;
+      height: 100vmin;
+      margin:auto;
+    }
+
+
+    /* Color specific squares */
+    .grid-container div:nth-child(31),
+    .grid-container div:nth-child(41),
+    .grid-container div:nth-child(33),
+    .grid-container div:nth-child(62),
+    .grid-container div:nth-child(41),
+    .grid-container div:nth-child(71),
+    .grid-container div:nth-child(37),
+    .grid-container div:nth-child(28),
+    .grid-container div:nth-child(39),
+    .grid-container div:nth-child(49),
+    .grid-container div:nth-child(74),
+    .grid-container div:nth-child(75),
+    .grid-container div:nth-child(67),
+    .grid-container div:nth-child(79),
+    .grid-container div:nth-child(80),
+    .grid-container div:nth-child(43),
+    .grid-container div:nth-child(44),
+    .grid-container div:nth-child(45),
+    .grid-container div:nth-child(46),
+    .grid-container div:nth-child(47),
+ .grid-container div:nth-child(60),    
+.grid-container div:nth-child(22){
+        background-color: #55381a;
+    }
+
+    .grid-container div:nth-child(64),
+    .grid-container div:nth-child(72),
+    .grid-container div:nth-child(73),
+    .grid-container div:nth-child(83){
+        background-color: #ca9b72;
+    }
+
+    .grid-container div:nth-child(48),
+    .grid-container div:nth-child(58),
+    .grid-container div:nth-child(68),
+    .grid-container div:nth-child(59),
+    .grid-container div:nth-child(69),
+    .grid-container div:nth-child(38),
+    .grid-container div:nth-child(56),
+    .grid-container div:nth-child(57),
+    .grid-container div:nth-child(47),
+    .grid-container div:nth-child(66),
+   .grid-container div:nth-child(77),
+    .grid-container div:nth-child(78){
+        background-color: #ad7c52;
+    }
+.grid-container div:nth-child(32),
+    .grid-container div:nth-child(42),
+    .grid-container div:nth-child(51),
+    .grid-container div:nth-child(52),
+    .grid-container div:nth-child(53),
+    .grid-container div:nth-child(54),
+    .grid-container div:nth-child(55),
+    .grid-container div:nth-child(70),
+    .grid-container div:nth-child(61),
+    .grid-container div:nth-child(63),    
+   .grid-container div:nth-child(65),
+    .grid-container div:nth-child(81),
+    .grid-container div:nth-child(82),
+    .grid-container div:nth-child(84),
+    .grid-container div:nth-child(85),
+    .grid-container div:nth-child(86),
+    .grid-container div:nth-child(87),
+    .grid-container div:nth-child(88),
+    .grid-container div:nth-child(89),
+    .grid-container div:nth-child(90),
+    .grid-container div:nth-child(76){
+        background-color: #ffdcbd;
+    }
+
+    /*
+        We can use this syntax to select a range:
+        - `div:nth-child(n+41)`: Selects all `div` elements that are the 41st child or later.
+        - `:nth-child(-n+50)`: Selects all `div` elements that are the 50th child or earlier.
+    */
+    .grid-container div:nth-child(n+91):nth-child(-n+93) {
+     background-color: black;
+    }
+ .grid-container div:nth-child(n+96):nth-child(-n+100) {
+      background-color: black;
+    }
+ .grid-container div:nth-child(n+94):nth-child(-n+95) {
+      background-color: #ffd672;
+    }
+    }
+ .grid-container div:nth-child(n+84):nth-child(-n+90) {
+      background-color: #AntiqueWhite;
+    }
+
+</style>
+</head>
+<body>
+  <div class="grid-container">
+    <!-- 100 divs -->
+    <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+    <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+    <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+    <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+    <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+    <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+    <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+    <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+    <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+    <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+  </div>
+</body>
+</html>
