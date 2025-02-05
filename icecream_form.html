@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>You're Invited to an Ice Cream Party!</title>
+	<script src="./js/init.js"></script>
+</head>
+
+<body>
+	<h1>You're Invited to an Ice Cream Party!</h1>
+	<div>Please fill out this form to help us plan.</div>
+<br>
+	<form action="https://httpbin.org/post" method="POST"
+	
+		<label for="email">What is your email address?</label>
+	<br>
+		<input type="email" id="email" name="email" placeholder="Your answer" required>
+
+	<br>
+		<label for="phonenumber">What is your phone number?</label>
+	<br>
+		<input type="number" id="phonenumber" name="phonenumber" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Your answer" required>
+
+	<br>
+		<label for="guests">How many people will your bring to the party?</label>
+	<br>
+		<input type="number" id="guests" name="guests" placeholder="Your answer" required>
+
+	<br>		
+<div>What is your favorite flavor of ice cream?</div>
+		<input type="radio" id="vanilla" name="favflavor">
+		<label for="vanilla">Vanilla</label>
+	<br>
+		<input type="radio" id="chocchip" name="favflavor">
+		<label for="chocchip">Chocolate Chip</label>
+	<br>
+		<input type="radio" id="strawberry" name="favflavor">
+		<label for="strawberry">Strawberry</label>
+	<br>
+		<input type="radio" id="other" name="favflavor">
+                <label for="other">Other</label>
+
+	<br>
+<div>Which toppings do you like?</div>
+		<input type="checkbox" id="sprinkles" name="toppings">
+		<label for="sprinkles">Sprinkles</label>
+	<br>
+                <input type="checkbox" id="magicshell" name="toppings">
+                <label for="magicshell">Magic Shell</label>
+        <br>    
+                <input type="checkbox" id="topchocchip" name="toppings">
+                <label for="topchocchip">Chocolate Chips</label>
+        <br>
+                <input type="checkbox" id="gummies" name="toppings">
+                <label for="gummies">Gummy Bears</label>
+        <br>
+                <input type="checkbox" id="topother" name="toppings">
+                <label for="topother">Other</label>
+        <br>
+
+		<label for="entertainment">What kind of entertainment should we have at the party?</label>
+	<br>
+		<select id="entertainment" name="entertainment">
+		<option value="placeholder" name="entertainment" disable selected>Choose</option>
+			<option value="ballonanimals" name"entertainment">Balloon Animals</option>
+			<option value="bouncehouse" name="entertainment">Bounce House</option>
+                        <option value="clown" name="entertainment">Clown</option>
+                        <option value="cornhole" name="entertainment">Cornhole</option>
+                        <option value="dj" name="entertainment">DJ</option>
+                        <option value="facepaint" name="entertainment">Face Painting</option>
+                        <option value="magic" name="entertainment">Magician</option>
+		</select>
+		
+	<br>
+		<label for="suggestions">Do you have any other suggestions or comments?</label>
+	<br>
+		<textarea id="suggestions" name="suggestions" rows="3"></textarea>
+	
+	<br>
+		<button type="button" id="submit" name="submit">Submit</button>
+		<input type="reset" id="reset" name="reset">
+</form>
+</body>
+</html>
