@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
 	<title>You're Invited to an Ice Cream Party!</title>
-	<script src="./js/init.js"></script>
+	<script src="./CWahl28.github.io/js/init.js"></script>
+	<script>window.onload = init; </script>
 </head>
 
 <body>
@@ -18,7 +19,7 @@
 	<br>
 		<label for="phonenumber">What is your phone number?</label>
 	<br>
-		<input type="number" id="phonenumber" name="phonenumber" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Your answer" required>
+		<input type="text" id="phonenumber" name="phonenumber" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Your answer" required>
 
 	<br>
 		<label for="guests">How many people will your bring to the party?</label>
@@ -76,7 +77,7 @@
 		<textarea id="suggestions" name="suggestions" rows="3"></textarea>
 	
 	<br>
-		<button type="button" id="submit" name="submit">Submit</button>
+		<button type="submit" id="submit" name="submit">Submit</button>
 		<input type="reset" id="reset" name="reset">
 </form>
 </body>
