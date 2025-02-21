@@ -1,0 +1,77 @@
+
+	.two{
+width: 200px;
+height: 100px;
+object-fit: cover;
+}
+	.three{
+max-width: 400px;
+max-height: 400px;
+min-width: 300px;
+min-height: 100px;
+}
+	.three2{
+border: 5px solid #000;
+background-color: orange;
+width: 800px;
+height: 800px;
+object-fit: none;
+object-position: 50% 100%;
+}
+	#div3-3{
+border: 2px solid #000;
+text-align: right;
+}
+	.three3{
+height: 200px;
+width: 200px;
+border: 5px solid #000;
+align: right;
+}
+	.four{
+height: 300px;
+width: 300px;
+border: 5px solid #C8A2CB;
+border-radius: 20%;
+}
+	.five{
+height: 300px;
+width: 300px;
+box-shadow: 5px 10px 15px rgba(0, 0, 0,0.5);
+}
+	.six{
+height: 300px;
+width: 300px;
+opacity: 40%;
+}
+	.seven{
+height: 300px;
+width: 300px;
+filter: grayscale(120%);
+}
+	.eight{
+height: 300px;
+width: 300px;
+filter: invert(2);
+}
+	.nine{
+height: 300px;
+width: 300px;
+filter: brightness(200%);
+}
+	.ten{
+height: 300px;
+width: 300px;
+z-index: 1;
+border: 2px solid #000;
+position: relative;
+}
+	.ten2{
+height: 300px;
+width: 300px;
+z-index: 0;
+border: 2px solid #000;
+position: relative;
+bottom: 200px;
+left: 275px;
+}
