@@ -1,0 +1,12 @@
+.spinny {
+	display: inline-block;
+	font-size: 24px;
+	transition: transform 0.3s ease-in-out;
+}
+.spinny:hover {
+	transform: rotate(360deg);
+}
+p {
+	font-size: 16px;	
+
+}
