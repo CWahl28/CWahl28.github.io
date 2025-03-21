@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<title>Selfportrait</title>
+ <script src="./../js/init.js"></script>
+ <link rel="stylesheet" href="./../style.css">
+</head>
+<body>
+<p><a href="./../index.html">Home</a></p>
+<p>This is a self portrait made with a canvas.</p>
+<div class="portrait">
+	<canvas class="self_portrait" width="400" height="500">
+	</canvas>
+	<script>
+		const canvas = document.getElementById("self_portrait");
+		const ctx = canvas.getContext("2d");
+	</script>
+	<canvas id="little_dude" width="100" height="100">
+	</canvas>
+	<script>
+                const canvas = document.getElementById("little_guy");
+                const ctx = canvas.getContext("2d");
+	</script>
+</div>
+</body>
+</html>
+
