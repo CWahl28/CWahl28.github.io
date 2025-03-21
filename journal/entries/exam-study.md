@@ -1,4 +1,4 @@
-### CLARA WAHL
+
 # WDE Exam Prep
 
 ## Instructions
