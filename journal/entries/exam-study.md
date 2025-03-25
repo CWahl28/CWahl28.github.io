@@ -62,9 +62,10 @@ We'll use this to inform our study plan for the test.
 
 2.6: Employ code, pre, kbd, and samp tags to display preformatted text, format code snippets and user input.
 Edube page: Paragraphs and Text Formatting - Part 4
-Practice page:
+Practice page:[link](https://CWahl28.github.io/journal/entries/2.6practice.html)
 Summary:
-
+These tags are used to display text differently to communicate things to the user and browser. Code: displays an inline chunk of code. Pre: displays a chunk of text while preserving items around it as a block element. kbd: displays keyboard input, inline text. Samp: displays the sample output of code in the tag. 
+New score:A or high B+
 
 5.3: Implement semantic markup and integrate modern HTML5 structural elements for document organization (header, nav, main, article, section, aside, footer).
 
