@@ -60,4 +60,12 @@ We'll use this to inform our study plan for the test.
 
 ## Study Plan
 
-(We'll start filling this part in next class)
+2.6: Employ code, pre, kbd, and samp tags to display preformatted text, format code snippets and user input.
+Edube page: Paragraphs and Text Formatting - Part 4
+Practice page:
+Summary:
+
+
+5.3: Implement semantic markup and integrate modern HTML5 structural elements for document organization (header, nav, main, article, section, aside, footer).
+
+5.7: Discuss HTML5 development best practices, focusing on code readability and performance.
