@@ -4,7 +4,7 @@
 	transition: transform 0.3s ease-in-out;
 }
 .spinny:hover {
-	transform: rotate(360deg);
+	transform: rotate(720deg);
 }
 p {
 	font-size: 16px;	
@@ -38,18 +38,30 @@ table.infotable thead {
   background-color: #f6d8b7;
 }
 
-
-.abouttbl {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: 8px;
+@media (max-width: 400px){
+	body{
+	grid:
+	'head' 1fr
+	'main' 4fr
+	'side' 1fr
+	}
 }
-    
 
-
-.div3 {
-    grid-column: span 2 / span 2;
-    grid-row-start: 2;
+body{ 
+	display: grid;
+	grid: 
+	'head head' 1fr
+	'main side' 4fr
+	'main side' 1fr	
+	/4fr  1fr	
 }
-        
+
+#header{
+	grid-area:head;
+}
+#maintxt{
+	grid-area:main;
+}
+#navtab{
+	grid-area:side;
+}
