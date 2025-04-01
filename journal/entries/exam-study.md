@@ -73,5 +73,12 @@ These tags are used to display text differently to communicate things to the use
 New score:A or high B+
 
 5.3: Implement semantic markup and integrate modern HTML5 structural elements for document organization (header, nav, main, article, section, aside, footer).
+Edube page:
+
+Practice Page:
+
+Summary:
+
+New Score:
 
 5.7: Discuss HTML5 development best practices, focusing on code readability and performance.

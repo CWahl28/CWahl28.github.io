@@ -34,34 +34,38 @@ table.infotable td, table.infotable th {
   padding: 3px;
 }
 
-table.infotable thead {
+table.infotable head {
   background-color: #f6d8b7;
 }
-
-@media (max-width: 400px){
+@media screen and (min-width: 400px) {
 	body{
+	display: grid;
 	grid:
-	'head' 1fr
-	'main' 4fr
-	'side' 1fr
+	'head'
+	'side'
+	'main';
 	}
 }
-
-body{ 
+@media screen and (min-width: 400px) {
+	body{
 	display: grid;
-	grid: 
-	'head head' 1fr
+	grid:
+	'head head' 0.5fr
 	'main side' 4fr
-	'main side' 1fr	
-	/4fr  1fr	
+	'main side' 1fr
+	/4fr 1fr;
+	}
 }
-
 #header{
 	grid-area:head;
+	background-color: #FFC785;
 }
 #maintxt{
 	grid-area:main;
-}
+	background-color: #FFE6C9;
+	text-align: center;
+}	
 #navtab{
 	grid-area:side;
+	background-color: #FFDBB5;
 }
