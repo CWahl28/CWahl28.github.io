@@ -1,24 +1,4 @@
-function init() {
-    const loc = window.location.href;
-    const isLocalFile = loc.startsWith("file://");
 
-    // Check if the document has a valid doctype
-    let hasValidDoctype = checkDoctype();
-
-    if (!hasValidDoctype) {
-        console.warn("Warning: This document does not have a <!DOCTYPE html> declaration.");
-        addWarningFooter();
-    }
-
-    if (isLocalFile) {
-        // Local file case: Include the DOCTYPE manually if necessary
-        const pageContent = `<!DOCTYPE html>\n` + document.documentElement.outerHTML;
-
-        fetch("https://html5.validator.nu/?out=json", {
-            method: "POST",
-            headers: {
-                "Content-Type": "text/html; charset=utf-8"
-            },
             body: pageContent
         })
         .then(response => response.json())
@@ -106,4 +86,6 @@ function renderErrorFooter() {
 
 // Call the init function when the DOM is fully loaded
 document.addEventListener('DOMContentLoaded', init);
+
+
 
