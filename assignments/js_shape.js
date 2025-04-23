@@ -4,6 +4,15 @@ const ctx = canvas.getContext("2d");
 ctx.fillStyle = "AliceBlue";
 ctx.fillRect(0,0,500,500);
 
+function leaf(x,y){
+	ctx.beginPath();
+        ctx.arc(x,y,45,0,2*Math.PI);
+        ctx.stroke();
+        ctx.fillStyle = "#a7ce79";
+        ctx.fill();
+        ctx.lineWidth = 1;
+}
+
 function petal(x,y){
 	ctx.beginPath();
 	ctx.arc(x,y,35,0,2*Math.PI);
@@ -25,7 +34,9 @@ function middle(x,y,r){
 }
 
 function flower(x,y){
-	petal(x-43,y)
+	leaf(x+30,y-50);
+        leaf(x+62,y-15);
+	petal(x-43,y);
 	petal(x-12,y+42);
         petal(x+40,y+30);
 	petal(x+42,y-25);
