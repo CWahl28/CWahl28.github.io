@@ -86,17 +86,17 @@ function animate() {
 		dy = dy*-1;
 	}
 
-        if(player.x>390){
-                player.x=390;
+        if(player.x>380){
+                player.x=380;
         }
-        if(player.x<10){
-                player.x=10;
+        if(player.x<20){
+                player.x=20;
         }
-        if(player.y>390){
-                player.y=390;
+        if(player.y>380){
+                player.y=380;
         }
-        if(player.y<10){
-                player.y=10;
+        if(player.y<20){
+                player.y=20;
         }
 }
 
