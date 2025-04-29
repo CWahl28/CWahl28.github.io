@@ -14,6 +14,8 @@ let x = 0;
 let y = 0;
 let dx = 4;
 let dy = 3;
+let score = 0;
+let gameRunning = true;
 
 //define functions
 function drawRect(x,y) {
@@ -38,40 +40,46 @@ function movePlayer(){
 	if(keys['ArrowUp']){
 		player.y -= player.speed;
 	}
-	if(keys['ArrowLeft']){
-        	player.x -= player.speed;
+//jones method to block from going off walls
+	if(keys['ArrowLeft'] && player.x>20){
+       	player.x -= player.speed;
 	}
-	if(keys['ArrowRight']){
+	if(keys['ArrowRight'] && player.x<380){
         	player.x += player.speed;
 	}
-/*
-	 if(keys['']){
-	        player.y += player.speed;
-	}
-        if(keys['']){
-                player.y -= player.speed;
-        }
-        if(keys['']){
-                player.x -= player.speed;
-        }
-        if(keys['']){
-                player.x += player.speed;
-        }
-*/
 }
 
+function drawScore(){
+	ctx.font="15px Ariel";
+	ctx.fillText("Score= "+score,5,15);
+}
+
+//function drawEnd(){
+//	ctx.font"30px Ariel";
+//	ctx.fillText("Congrats! Score= "+score,200,200);}
+
 function animate() {
+if(gameRunning){
 	drawRect(x,y);
 	drawPlayer();
 	movePlayer();	
+	//score += 1;
+	score++;	
+	drawScore();	
+	
+if(score >= 300){
+	gameRunning= false;
+}
+//if(gameRunning=false){
+//	drawEnd();}
+
+	//c c++
 
     // TODO: Add some code here 
     //  that will change the rectangle's position
 
 	x = x + dx;
 	y = y + dy;
-
-    requestAnimationFrame(animate);
 	
 	if(x>350){
 		dx = dx*-1;
@@ -85,19 +93,17 @@ function animate() {
 	if(y<0){
 		dy = dy*-1;
 	}
-
-        if(player.x>380){
-                player.x=380;
-        }
-        if(player.x<20){
-                player.x=20;
-        }
-        if(player.y>380){
+// own method for not going off walls
+	if(player.y>380){
                 player.y=380;
         }
         if(player.y<20){
                 player.y=20;
         }
+}
+
+		
+requestAnimationFrame(animate);
 }
 
 function handleKeyPress(e){
