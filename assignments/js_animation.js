@@ -12,8 +12,8 @@ const keys= {};
 
 let x = 0;
 let y = 0;
-let dx = 1;
-let dy = 1;
+let dx = 3.2;
+let dy = 3.8;
 let score = 0;
 let gameRunning = true;
 
