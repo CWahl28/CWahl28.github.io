@@ -2,16 +2,16 @@ const canvas = document.getElementById("myCanvas");
 const ctx = canvas.getContext("2d");
 
 const player = {
-	x:200,
-	y:200,
+	x:300,
+	y:300,
 	color:"Blue",
 	speed:3
 };
 
 const keys= {};
 
-let x = 0;
-let y = 0;
+let x = Math.random()*50;
+let y = Math.random()*50;
 let dx = 3;
 let dy = 4;
 let score = 0;
