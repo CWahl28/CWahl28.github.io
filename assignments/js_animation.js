@@ -12,8 +12,8 @@ const keys= {};
 
 let x = 0;
 let y = 0;
-let dx = 4;
-let dy = 3;
+let dx = 1;
+let dy = 1;
 let score = 0;
 let gameRunning = true;
 
@@ -48,10 +48,10 @@ function movePlayer(){
         	player.x += player.speed;
 	}
         if(keys['ArrowUp'] && player.y<20){
-        player.y -= player.speed;
+        player.y += player.speed;
         }
         if(keys['ArrowDown'] && player.y>380){
-                player.y += player.speed;
+                player.y -= player.speed;
         }
 
 }
@@ -67,20 +67,21 @@ function checkCollision(){
 	//helper variable time, not nessasrary but helpful
 	let player_min_x = player.x-20;
 	let player_max_x = player.x+20;
-	let player_min_y = y-20;
-	let player_max_y = x+20;
+	let player_min_y = player.y-20;
+	let player_max_y = player.y+20;
 
         let box_min_x = x;
         let box_max_x = x+50;
         let box_min_y = y;
         let box_max_y = y+50;
 
-	if(box_max_x > player_min_y
-		&& box_min_x < player_max_x
-		&& box_min_y < player_max_y
-		&& box_max_y > player_min_x){
+	if(box_min_x < player_max_x
+	&& box_max_x > player_min_x
+	&& box_min_y < player_max_y
+	&& box_max_y > player_min_y
+		){
 	
-	gameRunning = False;
+	gameRunning=False;
 	}
 }
 
