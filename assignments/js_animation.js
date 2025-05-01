@@ -29,7 +29,7 @@ function drawRect(x,y) {
 function drawPlayer(x,y) {
 	ctx.fillStyle = player.color;
 	ctx.beginPath();
-	ctx.arc(player.x, player.y, 20, 0, 2*Math.PI);
+	ctx.arc(player.x,player.y,20,0,2*Math.PI);
 	ctx.fill();
 }
 
@@ -47,6 +47,13 @@ function movePlayer(){
 	if(keys['ArrowRight'] && player.x<380){
         	player.x += player.speed;
 	}
+        if(keys['ArrowUp'] && player.y<20){
+        player.y -= player.speed;
+        }
+        if(keys['ArrowDown'] && player.y>380){
+                player.y += player.speed;
+        }
+
 }
 
 function drawScore(){
@@ -54,55 +61,60 @@ function drawScore(){
 	ctx.fillText("Score= "+score,5,15);
 }
 
-//function drawEnd(){
-//	ctx.font"30px Ariel";
-//	ctx.fillText("Congrats! Score= "+score,200,200);}
+function checkCollision(){
+	//this is AABB method
+
+	//helper variable time, not nessasrary but helpful
+	let player_min_x = player.x-20;
+	let player_max_x = player.x+20;
+	let player_min_y = y-20;
+	let player_max_y = x+20;
+
+        let box_min_x = x;
+        let box_max_x = x+50;
+        let box_min_y = y;
+        let box_max_y = y+50;
+
+	if(box_max_x > player_min_y
+		&& box_min_x < player_max_x
+		&& box_min_y < player_max_y
+		&& box_max_y > player_min_x){
+	
+	gameRunning = False;
+	}
+}
+
+function moveBox(){
+        x = x + dx;
+        y = y + dy;
+
+        if(x>350){
+                dx = dx*-1;
+        }
+        if(x<0){
+                dx = dx*-1;
+        }
+        if(y>350){
+                dy = dy*-1;
+        }
+        if(y<0){
+                dy = dy*-1;
+        }
+}
 
 function animate() {
 if(gameRunning){
 	drawRect(x,y);
+	moveBox();
 	drawPlayer();
 	movePlayer();	
 	//score += 1;
 	score++;	
 	drawScore();	
+	checkCollision();
 	
-if(score >= 300){
-	gameRunning= false;
-}
-//if(gameRunning=false){
-//	drawEnd();}
-
-	//c c++
-
-    // TODO: Add some code here 
-    //  that will change the rectangle's position
-
-	x = x + dx;
-	y = y + dy;
-	
-	if(x>350){
-		dx = dx*-1;
-	}
-	if(x<0){
-		dx = dx*-1;
-	}
-	if(y>350){
-		dy = dy*-1;
-	}
-	if(y<0){
-		dy = dy*-1;
-	}
-// own method for not going off walls
-	if(player.y>380){
-                player.y=380;
-        }
-        if(player.y<20){
-                player.y=20;
-        }
-}
-
-		
+//c c++
+}		
 requestAnimationFrame(animate);
 }
 
@@ -115,8 +127,6 @@ document.addEventListener('keydown', handleKeyPress);
 document.addEventListener('keyup',(e) =>{
 	keys[e.key] = false;
 });
-
-
 
 //call our function
 animate();
