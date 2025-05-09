@@ -1,92 +1,37 @@
 # Game Brainstorming 
 
-## Ideas
-- Pathing game
-- Hope the king doesn't fall ill. 
-
-## Path  Game 
-
-### Summary:
-
-Travel on a forest path while trying to stay on the path and remember your way. Walking off path or into the wrong endpoint will result in failure. The grass will eat you :). Levels will have increasing difficulty and puzzles.
-
-so tempted sheerly so I can make the fail animation
+## box puzzles
 
 ### Genre:
-
-- puzzle
-
-### Objectives:
-Reach the end of the path without straying from it or going the wrong direction.
-
-### End:
-When reaching exit or making a mistake.
-
-### Scoring:
-Succeed or fail system, shown at end.
-Level advancement.
-
-### Player Interaction:
-Move anound player sprite, need to figure out correct path based on puzzles
-
-### MVP:
-Turorial level with basic sprite and background. Only 1 direction sprite, might add more after?
-
-### Concept Art:
-[Art](conceptArt.html)
-
-## "Hope the king doesn't fall ill."
-
-### Genre:
-
 - Logic puzzle game
 
 ### Summary:
-
-Travel to the city in order to deliver a message to the king in a medieval fantasy enviorment. The player character is a messenger and needs to solve puzzles quickly in order to save the king. The time taken to finish the game corresponds to the results of the game. 
-
-Yeah it's just a more widespread version of the first game idea +humor from friends
+Solve puzzles by pushing boxes to their correct location,
 
 ### Objectives:
-Travel through the forest path and town to reach the king.
-
-Collect ingredients?
-
-Solve puzzles to get through your journey fast enough
+Solve puzzles to complete your journey by pushing boxes into correct locations to progress.
 
 ### End:
-When reaching the king, or the king's funeral.
+When you have completed all sections
 
 ### Scoring:
-How healthy the king is when you arrive 
-
-There will be a timer in the corner which is your score, but different results depending on how long you took.
-
-Possible Results:
-
-- Perfectly healthy
-
-- Suffering
-
-- Dying as you arrive
-
-- Dead on his throne
-
-- Funeral
+Time which you took on the puzzle, will be visibly tracked 
 
 ### Player Interaction:
 
 Moving player character, triggering results when nearby certain things, 
 
+possibly small npcs with hints which pop up when nearby
+
 ### MVP:
 
-Tutorial level with npc interaction and first puzzle.
+first puzzle, 
 
 ### Concept Art:
 [Art](conceptArt.html)
 
 
-## Puzzle Ideas for both concepts:
+## Puzzle Ideas for concepts:
 
 - mazes
 	- self explanatory
