@@ -10,11 +10,11 @@
 
 Travel on a forest path while trying to stay on the path and remember your way. Walking off path or into the wrong endpoint will result in failure. The grass will eat you :). Levels will have increasing difficulty and puzzles.
 
+so tempted sheerly so I can make the fail animation
+
 ### Genre:
 
 - puzzle
-
-- memory game
 
 ### Objectives:
 Reach the end of the path without straying from it or going the wrong direction.
@@ -27,7 +27,7 @@ Succeed or fail system, shown at end.
 Level advancement.
 
 ### Player Interaction:
-Move anound player sprite, need to figure out correct path based on puzzles/demos
+Move anound player sprite, need to figure out correct path based on puzzles
 
 ### MVP:
 Turorial level with basic sprite and background. Only 1 direction sprite, might add more after?
@@ -44,10 +44,13 @@ Turorial level with basic sprite and background. Only 1 direction sprite, might 
 ### Summary:
 
 Travel to the city in order to deliver a message to the king in a medieval fantasy enviorment. The player character is a messenger and needs to solve puzzles quickly in order to save the king. The time taken to finish the game corresponds to the results of the game. 
-There are sprites/npcs along your journey, with pop-ups of classic video game lines (skyrim style) sometimes with purposeful npc bugs(walk into wall, complaining about not being able to walk somewhere which is accessible, etc.)
+
+Yeah it's just a more widespread version of the first game idea +humor from friends
 
 ### Objectives:
 Travel through the forest path and town to reach the king.
+
+Collect ingredients?
 
 Solve puzzles to get through your journey fast enough
 
@@ -69,11 +72,11 @@ Possible Results:
 
 - Dead on his throne
 
-- Rotting/Buried body
+- Funeral
 
 ### Player Interaction:
 
-Moving player character, triggering results when nearby npcs, 
+Moving player character, triggering results when nearby certain things, 
 
 ### MVP:
 
@@ -81,6 +84,7 @@ Tutorial level with npc interaction and first puzzle.
 
 ### Concept Art:
 [Art](conceptArt.html)
+
 
 ## Puzzle Ideas for both concepts:
 
@@ -99,3 +103,7 @@ Tutorial level with npc interaction and first puzzle.
 - memory challenges
 	- how many ____ were on the previous level?
 	- where was the _____ located at the start of this level?
+
+-move boxes
+	-push boxes around, object x+1 when bumped up against
+	-move to spots or out of the way
