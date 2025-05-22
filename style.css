@@ -56,16 +56,16 @@ table.infotable head {
 	/4fr 1fr;
 	}
 }
-#header{
+.header{
 	grid-area:head;
 	background-color: #FFC785;
 }
-#maintxt{
+.maintxt{
 	grid-area:main;
 	background-color: #FFE6C9;
 	text-align: center;
 }	
-#navtab{
+.navtab{
 	grid-area:side;
 	background-color: #FFDBB5;
 }

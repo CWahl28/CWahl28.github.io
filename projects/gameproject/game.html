@@ -3,22 +3,38 @@
 
 <head>
     <title>Game Project</title>
-    <script src="./projects/CWahl28.github.io/js/init.js"></script>
+    <script src="../../js/init.js"></script>
+	<script>window.onload=init</script>
+	<link rel="stylesheet" type="text/css" href="../../style.css">
 	<style>
 		canvas{
-		border: 3px solid;
-		padding:0;
-		display:block;
+		border: 3px solid #0F581B;
+		padding:;
 		margin:auto;
-		background-color:Grey;
+		display:block;
+		background-color: #278E38;
 		}
 	</style>
 <body>
+<div class="header">
+<h1>Game Project</h1>
+</div>
+
+<div class="navtab">
+<h3>Info</h3>
+<p>This is a puzzle game where you, the player, push boxes.</p>
+<p>Your goal is to move the object to it's correct spot.</p>
+<p>Use arrow keys to move, shift to sprint, and space to interact</p>
+<p> i haven't finished this :]</p>
+</div>
+
+<div class="maintxt">
         <canvas id="myCanvas" 
-		 width="600" 
-		height="600">
+		 width="700" 
+		height="500">
         </canvas>
         <script src="js_game.js">
         </script>
+</div>
 </body>
 </html>
