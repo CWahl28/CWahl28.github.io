@@ -11,40 +11,37 @@ const player = {
 	skinColor:"#f7d19a",
 	hairColor:"#b38d56",
 	eye2Color:"White",	
+	sprintingState: false,
 };
 
 const hole = {
 	x:150,
 	y:235,
-	color:"Black",
+	color:"Tan",
 };
 
-const Box = {
+const box = {
 	x:350,
 	y:275,
-	color:"Grey",
+	color:"Black",
 };
 
 const keys= {};
 
-let x = 0;
-let y = 0;
-/*
 let goal_min_x = hole.x;
 let goal_max_x = hole.x+62;
 let goal_min_y = hole.y;
 let goal_max_y = hole.y+62;
 
-let box_min_x = Box.x;
-let box_max_x = Box.x+60;
-let box_min_y = Box.y;
-let box_max_y = Box.y+60;
+let box_min_x = box.x;
+let box_max_x = box.x+60;
+let box_min_y = box.y;
+let box_max_y = box.y+60;
 
 let player_min_x = player.x;
 let player_max_x = player.x+30;
 let player_min_y = player.y;
 let player_max_y = player.y+30;
-*/
 
 let score = 0;
 let gameRunning = true;
@@ -95,38 +92,25 @@ function eyeWhite(x,y){
 }
 
 function movePlayer(){   
-	if(keys['ArrowDown']){
-		player.y += player.speed;
-	}
-	if(keys['ArrowUp']){
-		player.y -= player.speed;
-	}
-	if(keys['ArrowLeft']){
-        	player.x -= player.speed;
-	} 
-	if(keys['ArrowRight']){
-        	player.x += player.speed;
-	}
-/*
-	if(keys['ArrowDown'] && keys['ShiftLeft']){
-                player.y += player.speed += 5;
+        if(keys['ArrowDown'] && player.y<455){
+                player.y += player.speed;
         }
-        if(keys['ArrowUp'] && keys['ShiftLeft']){
-                player.y -= player.speed -= 5;
+        if(keys['ArrowUp'] && player.y>20){
+                player.y -= player.speed;
         }
-        if(keys['ArrowLeft'] && keys['ShiftLeft']){
-                player.x -= player.speed -= 5;
+        if(keys['ArrowLeft'] && player.x>20){
+                player.x -= player.speed;
         }
-        if(keys['ArrowRight'] && keys['ShiftLeft']){
-                player.x += player.speed += 5;
+        if(keys['ArrowRight'] && player.x<685){
+                player.x += player.speed;
         }
-*/
+
 }
 
 function addBox(x,y){
 	ctx.fillRect(x,y,60,60);
 	ctx.fill();
-	ctx.fillStyle = Box.color;
+	ctx.fillStyle = box.color;
 }
 
 function newHole(x,y){
@@ -137,47 +121,39 @@ function newHole(x,y){
 
 
 function boxMove(){
-	if(player_max_x<box_min_x){
-                ctx.translate(Box.x+5,Box.y);
+	if(player_max_x=<box_min_x){
         }
-        if(player_min_x<box_max_x){
-                ctx.translate(Box.x-5,Box.y);
+        if(player_min_x=<box_max_x){
         }
-        if(player_max_y>box_min_y){
-                ctx.translate(Box.x,Box.y-5);
+        if(player_max_y=>box_min_y){
         }
-        if(player_min_y<box_max_y){
-                ctx.translate(Box.x,Box.y+5);
+        if(player_min_y=<box_max_y){
         }
 }
 
 function boxComplete(){
-	if(box_min_x < goal_max_x
-	&& box_max_x > goal_min_x
-	&& box_min_y < goal_max_y
-	&& box_max_y > goal_min_y
+	if(
 		){
 	gameRunning = false;
 	}
 }
 
 function colorFix(x,y){
-	ctx.fillRect(x,y,1,1);
+	ctx.fillRect(x,y,5,5);
 	ctx.fill();
-	ctx.fillStyle = Box.color;
+	ctx.fillStyle = "Tan";
 }
 
 function animate(){
 	if(gameRunning){
 	ctx.clearRect(0, 0, canvas.width, canvas.height);
-	addBox(Box.x,Box.y);
+	addBox(box.x,box.y);
 	newHole(hole.x,hole.y);
 	drawPlayer(player.x,player.y);
 	movePlayer();
 //	boxMove();
 //	boxComplete();
 	score++;
-	colorFix(2,2);
 	}
 requestAnimationFrame(animate);
 }
