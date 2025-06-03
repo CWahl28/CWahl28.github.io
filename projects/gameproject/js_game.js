@@ -11,7 +11,6 @@ const player = {
 	skinColor:"#f7d19a",
 	hairColor:"#b38d56",
 	eye2Color:"White",	
-	sprintingState: false,
 };
 
 const hole = {
@@ -119,7 +118,7 @@ function newHole(x,y){
 	ctx.fillStyle= hole.color;
 }
 
-
+/*
 function boxMove(){
 	if(player_max_x=<box_min_x){
         }
@@ -133,11 +132,11 @@ function boxMove(){
 
 function boxComplete(){
 	if(
-		){
+	){
 	gameRunning = false;
 	}
 }
-
+*/
 function colorFix(x,y){
 	ctx.fillRect(x,y,5,5);
 	ctx.fill();
