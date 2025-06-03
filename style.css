@@ -1,19 +1,16 @@
-.spinny {
+#spinny {
 	display: inline-block;
 	font-size: 24px;
 	transition: transform 0.3s ease-in-out;
 }
-.spinny:hover {
+#spinny:hover {
 	transform: rotate(720deg);
 }
 p {
 	font-size: 16px;	
 
 }
-.portait {
-	border: 2px solid black;
-}
-.self_portrait {
+#bioPic {
 	border: 2px solid black;
 }
 
@@ -59,8 +56,16 @@ table.infotable head {
 .header{
 	grid-area:head;
 	background-color: #FFC785;
+	border-radius:3px;
 }
+
+#title{
+	font-weight: bold;
+	font-size: 32px;	
+}
+
 .maintxt{
+	padding-top:15px;
 	grid-area:main;
 	background-color: #FFE6C9;
 	text-align: center;
