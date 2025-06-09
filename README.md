@@ -5,6 +5,7 @@ It is a site for personal and educational use.
 
 It consists of projects, assignments, and other odd things.
 
+  
 
 The only contributer is Clara Wahl, also known on github as CWahl28.
 
