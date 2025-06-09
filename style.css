@@ -8,8 +8,30 @@
 }
 p {
 	font-size: 16px;	
-
+	font-family: Helvetica, sans-serif;
 }
+h1 {
+        font-family: Helvetica, sans-serif;
+}
+h2 {
+        font-family: Helvetica, sans-serif;
+}
+h3 {
+        font-family: Helvetica, sans-serif;
+}
+h4 {
+        font-family: Helvetica, sans-serif;
+}
+h5 {
+        font-family: Helvetica, sans-serif;
+}
+span {
+        font-family: Helvetica, sans-serif;
+}
+q {
+        font-family: Helvetica, sans-serif;
+}
+
 #bioPic {
 	border: 2px solid black;
 }
@@ -22,6 +44,7 @@ table.infotable {
   border-color: #c59d75;
   border-style: solid;
   color: #000000;
+  font-family: Helvetica, sans-serif;
 }
 
 table.infotable td, table.infotable th {
@@ -47,7 +70,7 @@ table.infotable head {
 	body{
 	display: grid;
 	grid:
-	'head head' 0.5fr
+	'head head' 0.25fr
 	'main side' 4fr
 	'main side' 1fr
 	/4fr 1fr;
@@ -57,11 +80,17 @@ table.infotable head {
 	grid-area:head;
 	background-color: #FFC785;
 	border-radius:3px;
+	padding:15px;
 }
 
-#title{
+.header #title{
 	font-weight: bold;
-	font-size: 32px;	
+	font-size: 32px;
+	vertical-align: middle;
+}
+
+.header #home{
+	vertical-align: middle;
 }
 
 .maintxt{
