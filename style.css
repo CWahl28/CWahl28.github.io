@@ -109,3 +109,13 @@ table.infotable head {
 	grid-area:side;
 	background-color: #FFDBB5;
 }
+
+table{
+	align:center;
+}
+#straw{
+	bgcolor:"#FDF5F8";
+}
+#bana{
+	bgcolor:"#FFF1C2";
+}
