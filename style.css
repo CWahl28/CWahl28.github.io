@@ -31,6 +31,12 @@ span {
 q {
         font-family: Helvetica, sans-serif;
 }
+ul  {
+        font-family: Helvetica, sans-serif;
+}
+ol {
+        font-family: Helvetica, sans-serif;
+}
 
 #bioPic {
 	border: 2px solid black;
