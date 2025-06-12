@@ -13,33 +13,32 @@ const player = {
 	eye2Color:"White",	
 };
 
+const box= {
+	move:3,
+	goalx:200,
+	goaly:300,
+};
+
 const keys= {};
 
-const goal = {
-	x:200,
-	y:300,
-};
-
-const box = {
-	x:150,
-	y:200,
-};
+let boxx=400;
+let boxy=100;
 /*
-let goal_min_x = goal.x;
-let goal_max_x = goal.x+62;
-let goal_min_y = goal.y;
-let goal_max_y = goal.y+62;
+let goal_min_x = goalx;
+let goal_max_x = goalx+80;
+let goal_min_y = goaly;
+let goal_max_y = goaly+80;
 
-let box_min_x = box.x;
-let box_max_x = box.x+60;
-let box_min_y = box.y;
-let box_max_y = box.y+60;
-
+let box_min_x = boxx;
+let box_max_x = boxx+82;
+let box_min_y = boxy;
+let box_max_y = boxy+82;
+*/
 let player_min_x = player.x;
 let player_max_x = player.x+30;
 let player_min_y = player.y;
 let player_max_y = player.y+30;
-*/
+
 let score = 0;
 let gameRunning = true;
 
@@ -126,41 +125,65 @@ function movePlayer(){
 
 }
 
-function addBox(x,y){
-	ctx.fillRect(x,y,60,60);
+function newHole(x,y){
+	ctx.fillRect(x,y,80,80);
 	ctx.fill();
-	ctx.fillStyle = "Grey";
+	ctx.fillStyle = "Black";
 }
 
-function newHole(x,y){
-	ctx.fillRect(x,y,62,62);
+function addBox(x,y){
+	ctx.fillRect(x,y,82,82);
 	ctx.fill();
-	ctx.fillStyle= "Black";
+	ctx.fillStyle= "Grey";
 }
-/*
+
 function boxMove(){
-	if(player_min_x<box_max_x 
-	&& player_min_y>box_min_y 
-	&& player_max_y<box_max_y){
-        	
+let goal_min_x = box.goalx;
+let goal_max_x = box.goalx+80;
+let goal_min_y = box.goaly;
+let goal_max_y = box.goaly+80;
+
+let box_min_x = boxx;
+let box_max_x = boxx+82;
+let box_min_y = boxy;
+let box_max_y = boxy+82;
+/*
+	if(player_min_x < goal_max_x 
+	&& player_min_y > goal_min_y 
+	&& player_max_y < goal_max_y
+	&& player_max_x > goal_max_x)
+*/
+	if(goal_min_x < player_max_x
+	&& goal_max_x > player_min_x
+	&& goal_min_y < player_max_y
+	&& goal_max_y > player_min_y)
+				{
+        	box.goalx = box.goalx-1;
+//		ctx.translate(-1,0);
 	}
-	if(player_min_y<box_max_y
-	&& player_max_x<box_max_x
-	&& player_min_x>box_min_x){
-		
+	if(player_min_y<goal_max_y
+	&& player_max_x<goal_max_x
+	&& player_min_x>goal_min_x
+	&& player_max_y>goal_max_y){
+		box.goaly = box.goaly-1;
+//		ctx.translate(0,-1);
 	}
-	if(player_min_y>box_min_y
-	&& player_max_y<box_max_y
-	&& player_max_x>box_min_x){
-		
+	if(player_min_y>goal_min_y
+	&& player_max_y<goal_max_y
+	&& player_max_x>goal_min_x
+	&& player_min_x>goal_min_x){
+		box.goalx = box.goalx+1;
+//		ctx.translate(1,0);
 	}
-	if(player_min_x>box_min_x
-	&& player_max_x<box_max_x
-	&& player_max_y>box_min_y){
-		
+	if(player_min_x>goal_min_x
+	&& player_max_x<goal_max_x
+	&& player_max_y>goal_min_y
+	&& player_min_y>goal_min_y){
+		box.goaly = box.goaly+1;
+//		ctx.translate(0,1);
 	}
 }
-*/
+
 /*
 function boxComplete(){
 	if(
@@ -179,11 +202,11 @@ function animate(){
 	if(gameRunning){
 	ctx.clearRect(0, 0, canvas.width, canvas.height);
 //	tree(100,100);
-	addBox(box.x,box.y);
-	newHole(goal.x,goal.y);
+	addBox(box.goalx,box.goaly);
+	newHole(boxx,boxy);
 	drawPlayer(player.x,player.y);
 	movePlayer();
-//	boxMove();
+	boxMove();
 //	boxComplete();
 	score++;
 	drawScore();
